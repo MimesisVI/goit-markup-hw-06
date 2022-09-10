@@ -23,7 +23,8 @@
       <div class="container">
         <nav class="header__nav">
           <a href="./index.html" class="header__logo header__logo_top"
-            ><span class="header__logo_mod">Web</span>Studio</a>
+            ><span class="header__logo_mod">Web</span>Studio</a
+          >
           <ul class="header__menu list">
             <li class="header__item">
               <a class="header__link link current" href="./index.html">Студія</a>
@@ -36,30 +37,24 @@
             </li>
           </ul>
         </nav>
-          <ul class="header__menu-2 list address">
-            <li class="header__item-2">
-              <a class="header__contacts link" href="mailto:info@devstudio.com">
-                <svg class="header__icon">
-                  <use
-                    class="header__svg"
-                    href="./images/icon/symbol-defs.svg#icon-envelope"
-                  ></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="header__item-2">
-              <a class="header__contacts link" href="tel:+380961111111">
-                <svg class="header__icon">
-                  <use
-                    class="header__svg"
-                    href="./images/icon/symbol-defs.svg#icon-smartphone"
-                  ></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+        <ul class="header__menu-2 list address">
+          <li class="header__item-2">
+            <a class="header__contacts link" href="mailto:info@devstudio.com">
+              <svg class="header__icon">
+                <use class="header__svg" href="./images/icon/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header__item-2">
+            <a class="header__contacts link" href="tel:+380961111111">
+              <svg class="header__icon">
+                <use class="header__svg" href="./images/icon/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
       </div>
       <!-- ********************** Modal ********************** -->
       <div class="backdrop is-hidden" data-modal>
@@ -142,16 +137,31 @@
           <h2 class="main__work__head">Чим ми займаємося</h2>
           <ul class="main__work__list list">
             <li class="main__work__thumb">
-                <img class="main__work__item" src="./images/photo-1.jpg" alt="Приклад наших робіт №1" width="370" />
-                <p class="main__work__text">Десктопні додатки</p>
+              <img
+                class="main__work__item"
+                src="./images/photo-1.jpg"
+                alt="Приклад наших робіт №1"
+                width="370"
+              />
+              <p class="main__work__text">Десктопні додатки</p>
             </li>
             <li class="main__work__thumb">
-                <img class="main__work__item" src="./images/photo-2.jpg" alt="Приклад наших робіт №2" width="370" />
-                <p class="main__work__text">Мобільні додатки</p>
+              <img
+                class="main__work__item"
+                src="./images/photo-2.jpg"
+                alt="Приклад наших робіт №2"
+                width="370"
+              />
+              <p class="main__work__text">Мобільні додатки</p>
             </li>
             <li class="main__work__thumb">
-                <img class="main__work__item" src="./images/photo-3.jpg" alt="Приклад наших робіт №3" width="370" />
-                <p class="main__work__text">Дизайнерські рішення</p>
+              <img
+                class="main__work__item"
+                src="./images/photo-3.jpg"
+                alt="Приклад наших робіт №3"
+                width="370"
+              />
+              <p class="main__work__text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -464,7 +474,9 @@
                 >
               </li>
               <li>
-                <a class="footer__address link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="footer__address link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li>
                 <a class="footer__address link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -472,7 +484,7 @@
             </ul>
           </address>
         </div>
-        <div class="soc-container">
+        <div class="footer__soc-container">
           <p class="footer__soc-container__head">приєднуйтесь</p>
           <ul class="footer__soclist">
             <li class="footer__soclist__item">
@@ -504,6 +516,22 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer__mailing">
+          <p class="footer__mailing__text">Підпишіться на розсилку</p>
+          <div class="footer__mailing__container">
+            <form class="footer__form" action="">
+              <label>
+                <input class="footer__input" type="email" name="mail" placeholder="E-mail"/>
+              </label>
+            </form>
+            <button class="footer__mailing__button button-blue" type="button" data-modal-open>
+              Підписатися
+                <svg class="footer__mailing__svg">
+                  <use href="./images/icon/symbol-defs.svg#icon-send"></use>
+                </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
