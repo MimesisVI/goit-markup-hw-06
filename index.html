@@ -64,6 +64,64 @@
               <use href="./images/icon/symbol-defs.svg#icon-cross"></use>
             </svg>
           </button>
+          <p class="main__modal__text">Залиште свої дані, ми вам передзвонимо</p>
+          <ul>
+            <li>
+              <form class="main__modal__form">
+                <label class="main__modal__lable">
+                  <p>Ім'я</p>
+                  <input class="main__modal__input" type="text" name="name" />
+                </label>
+                <!--                 <svg>
+                  <use></use>
+                </svg> -->
+              </form>
+            </li>
+            <li>
+              <form class="main__modal__form">
+                <label class="main__modal__lable">
+                  <p>Телефон</p>
+                  <input class="main__modal__input" type="tel" name="tel" />
+                </label>
+                <!--                 <svg>
+                  <use></use>
+                </svg> -->
+              </form>
+            </li>
+            <li>
+              <form class="main__modal__form">
+                <label class="main__modal__lable">
+                  <p>Пошта</p>
+                  <input class="main__modal__input" type="email" name="mail" />
+                </label>
+                <!--                 <svg>
+                  <use></use>
+                </svg> -->
+              </form>
+            </li>
+            <li>
+              <form class="main__modal__form">
+                <label class="main__modal__lable">
+                  <p>Коментар</p>
+                  <textarea class="main__modal__textarea" 
+                            name="feedback" 
+                            rows="5" 
+                            placeholder="Введіть текст">
+                  </textarea>
+                </label>
+              </form>
+            </li>
+          </ul>
+          <li>
+            <form>
+              <label class="main__modal__lable-2">
+                <input type="checkbox" name="hobby" value="reading" />
+                <p class="main__modal__text-2">Погоджуюся з розсилкою та приймаю <a href="https://www.google.com.ua/" target="_blank">Умови договору</a>
+                </p>
+              </label>
+            </form>
+          </li>
+          <button class="main__modal__button button-blue" type="button">Відправити</button>
         </div>
       </div>
     </header>
@@ -522,14 +580,14 @@
           <div class="footer__mailing__container">
             <form class="footer__form" action="">
               <label>
-                <input class="footer__input" type="email" name="mail" placeholder="E-mail"/>
+                <input class="footer__input" type="email" name="mail" placeholder="E-mail" />
               </label>
             </form>
             <button class="footer__mailing__button button-blue" type="button" data-modal-open>
               Підписатися
-                <svg class="footer__mailing__svg">
-                  <use href="./images/icon/symbol-defs.svg#icon-send"></use>
-                </svg>
+              <svg class="footer__mailing__svg">
+                <use href="./images/icon/symbol-defs.svg#icon-send"></use>
+              </svg>
             </button>
           </div>
         </div>
