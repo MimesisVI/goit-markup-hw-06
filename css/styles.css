@@ -268,10 +268,16 @@ body {
   background-color: var(--main-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main__hero__button:hover, .main__hero__button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--button-hover-color);
 }
 
 /* Modal */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -320,11 +326,24 @@ body {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #ffffff;
+  
+  fill: var(--headers-color);
+
+  cursor: pointer;
 }
 
 .main__modal-cross {
   width: 11px;
   height: 11px;
+
+  fill: var(--headers-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main__modal-container:hover > .main__modal-cross, 
+.main__modal-container:focus > .main__modal-cross {
+  fill: var(--main-color);
 }
 
 .main__modal__text {
@@ -340,17 +359,31 @@ body {
   color: var(--headers-color);
 }
 
-.main__modal__form {
-  margin-bottom: 10px;
+.main__modal__item {
+  position: relative;
 }
 
-.main__modal__lable {
-  display: flex;
-  flex-direction: column;
+.main__modal__form {
+  margin-bottom: 10px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main__modal__form:hover + .main__modal__icon, 
+.main__modal__form:focus + .main__modal__icon {
+  fill: var(--main-color);
+}
+
+.main__modal__form:focus-within + .main__modal__icon {
+  fill: var(--main-color);
 }
 
 .main__modal__lable-2 {
+  position: relative;
+
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   margin-top: 20px;
   margin-bottom: 30px;
@@ -361,7 +394,63 @@ body {
   text-decoration: underline;
 }
 
-.main__modal__lable p{
+.main__modal__svg-2 {
+  margin-right: 8px;
+
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid var(--main-color);
+  border-radius: 2px;
+  background-color: var(--main-color);
+
+  fill: white;
+  
+  opacity: 0;
+}
+
+.main__modal__checbox:checked ~ .main__modal__svg-2 {
+  opacity: 1;
+} 
+
+.main__modal__custom-checbox {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid var(--headers-color);
+  border-radius: 2px;
+}
+
+.main__modal__checbox:checked + .main__modal__custom-checbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main__modal__checbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main__modal__form p{
   margin-bottom: 4px;
 
   font-family: var(--primary-font);
@@ -375,9 +464,41 @@ body {
 .main__modal__input {
   width: 448px;
   height: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 43px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main__modal__input:hover, 
+.main__modal__input:focus,
+.main__modal__input:focus-within {
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.main__modal__icon {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+
+  width: 18px;
+  height: 18px;
+
+  fill: var(--headers-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.minimize-icon {
+  width: 15px;
+  height: 15px;
 }
 
 .main__modal__textarea {
@@ -391,7 +512,6 @@ body {
 }
 
 .main__modal__text-2 {
-  margin-left: 8px;
 
   font-family: var(--primary-font);
   font-size: 14px;
@@ -415,14 +535,19 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   border-radius: 4px;
   border: var(--main-color);
   color: var(--color-blu-fon);
   background-color: var(--main-color);
 
-/*   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main__modal__button:hover, .main__modal__button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--button-hover-color);
 }
 
 /*Наші плюси*/
@@ -451,7 +576,7 @@ body {
   border-radius: 4px;
 }
 
-.main__ours-plus__icon__svg {
+.main__ours-plus__svg {
   width: 70px;
   height: 70px;
 }
@@ -614,7 +739,7 @@ body {
   fill: #fff;
 }
 
-.main__team__soclist__svg {
+.main__soclist__svg {
   width: 20px;
   height: 20px;
 }
@@ -635,7 +760,7 @@ body {
   line-height: 1.16;
   text-align: center;
 
-  color: #212121;
+  color: var(--headers-color);
 }
 
 .main__clients__list {
@@ -644,7 +769,7 @@ body {
   gap: 30px;
 }
 
-.main__clients__icon {
+.main__clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -659,8 +784,8 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main__clients__icon:hover,
-.main__clients__icon:focus {
+.main__clients-icon:hover,
+.main__clients-icon:focus {
   fill: var(--main-color);
   border: 1px solid var(--main-color);
 }
@@ -940,6 +1065,10 @@ body {
   height: 50px;
   margin-right: 12px;
 
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -970,8 +1099,13 @@ body {
   color: var(--color-blu-fon);
   background-color: var(--main-color);
 
-/*   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__mailing__button:hover, .footer__mailing__button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--button-hover-color);
 }
 
 .footer__mailing__svg {

@@ -66,47 +66,44 @@
           </button>
           <p class="main__modal__text">Залиште свої дані, ми вам передзвонимо</p>
           <ul>
-            <li>
+            <li class="main__modal__item">
               <form class="main__modal__form">
                 <label class="main__modal__lable">
                   <p>Ім'я</p>
                   <input class="main__modal__input" type="text" name="name" />
                 </label>
-                <!--                 <svg>
-                  <use></use>
-                </svg> -->
               </form>
+              <svg class="main__modal__icon minimize-icon">
+                <use href="./images/icon/symbol-defs.svg#icon-human"></use>
+              </svg>
             </li>
-            <li>
+            <li class="main__modal__item">
               <form class="main__modal__form">
                 <label class="main__modal__lable">
                   <p>Телефон</p>
                   <input class="main__modal__input" type="tel" name="tel" />
                 </label>
-                <!--                 <svg>
-                  <use></use>
-                </svg> -->
               </form>
+              <svg class="main__modal__icon">
+                <use href="./images/icon/symbol-defs.svg#icon-phone"></use>
+              </svg>
             </li>
-            <li>
+            <li class="main__modal__item">
               <form class="main__modal__form">
                 <label class="main__modal__lable">
                   <p>Пошта</p>
                   <input class="main__modal__input" type="email" name="mail" />
                 </label>
-                <!--                 <svg>
-                  <use></use>
-                </svg> -->
               </form>
+              <svg class="main__modal__icon">
+                <use href="./images/icon/symbol-defs.svg#icon-mail"></use>
+              </svg>
             </li>
             <li>
               <form class="main__modal__form">
                 <label class="main__modal__lable">
                   <p>Коментар</p>
-                  <textarea class="main__modal__textarea" 
-                            name="feedback" 
-                            rows="5" 
-                            placeholder="Введіть текст">
+                  <textarea class="main__modal__textarea" name="feedback" rows="5" placeholder="Введіть текст">
                   </textarea>
                 </label>
               </form>
@@ -115,13 +112,19 @@
           <li>
             <form>
               <label class="main__modal__lable-2">
-                <input type="checkbox" name="hobby" value="reading" />
-                <p class="main__modal__text-2">Погоджуюся з розсилкою та приймаю <a href="https://www.google.com.ua/" target="_blank">Умови договору</a>
+                <input class="main__modal__checbox" type="checkbox" name="hobby" value="reading" />
+                <span class="main__modal__custom-checbox"></span>
+                <svg class="main__modal__svg-2">
+                  <use href="./images/icon/symbol-defs.svg#icon-check"></use>
+                </svg>
+                <p class="main__modal__text-2">
+                  Погоджуюся з розсилкою та приймаю
+                  <a href="https://www.google.com.ua/" target="_blank">Умови договору</a>
                 </p>
               </label>
             </form>
           </li>
-          <button class="main__modal__button button-blue" type="button">Відправити</button>
+          <button class="main__modal__button button-blue" type="submit">Відправити</button>
         </div>
       </div>
     </header>
@@ -144,7 +147,7 @@
           <ul class="list">
             <li class="main__item">
               <div class="main__ours-plus__icon">
-                <svg class="main__ours-plus__icon__svg">
+                <svg class="main__ours-plus__svg">
                   <use href="./images/icon/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -155,7 +158,7 @@
             </li>
             <li class="main__item">
               <div class="main__ours-plus__icon">
-                <svg class="main__ours-plus__icon__svg">
+                <svg class="main__ours-plus__svg">
                   <use href="./images/icon/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -166,7 +169,7 @@
             </li>
             <li class="main__item">
               <div class="main__ours-plus__icon">
-                <svg class="main__ours-plus__icon__svg">
+                <svg class="main__ours-plus__svg">
                   <use href="./images/icon/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -177,7 +180,7 @@
             </li>
             <li class="main__item">
               <div class="main__ours-plus__icon">
-                <svg class="main__ours-plus__icon__svg">
+                <svg class="main__ours-plus__svg">
                   <use href="./images/icon/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -241,7 +244,7 @@
                       href="https://www.instagram.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-insta"></use>
                       </svg>
                     </a>
@@ -252,7 +255,7 @@
                       href="https://twitter.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-twiter"></use>
                       </svg>
                     </a>
@@ -263,7 +266,7 @@
                       href="https://www.facebook.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -274,7 +277,7 @@
                       href="https://www.linkedin.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -294,7 +297,7 @@
                       href="https://www.instagram.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-insta"></use>
                       </svg>
                     </a>
@@ -305,7 +308,7 @@
                       href="https://twitter.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-twiter"></use>
                       </svg>
                     </a>
@@ -316,7 +319,7 @@
                       href="https://www.facebook.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -327,7 +330,7 @@
                       href="https://www.linkedin.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -347,7 +350,7 @@
                       href="https://www.instagram.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-insta"></use>
                       </svg>
                     </a>
@@ -358,7 +361,7 @@
                       href="https://twitter.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-twiter"></use>
                       </svg>
                     </a>
@@ -369,7 +372,7 @@
                       href="https://www.facebook.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -380,7 +383,7 @@
                       href="https://www.linkedin.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -400,7 +403,7 @@
                       href="https://www.instagram.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-insta"></use>
                       </svg>
                     </a>
@@ -411,7 +414,7 @@
                       href="https://twitter.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-twiter"></use>
                       </svg>
                     </a>
@@ -422,7 +425,7 @@
                       href="https://www.facebook.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -433,7 +436,7 @@
                       href="https://www.linkedin.com/"
                       target="_blank"
                     >
-                      <svg class="main__team__soclist__svg">
+                      <svg class="main__soclist__svg">
                         <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -449,61 +452,61 @@
         <div class="container">
           <h2 class="main__clients__head">Постійні клієнти</h2>
           <ul class="main__clients__list">
-            <li class="main__clients__list__item">
-              <a class="main__clients__icon" href="https://www.google.com/" target="_blank">
+            <li class="main__list__item">
+              <a class="main__clients__link" href="https://www.google.com/" target="_blank">
                 <svg class="main__clients_svg">
                   <use
-                    class="main__cliente-icon"
+                    class="main__clients-icon"
                     href="./images/icon/symbol-defs.svg#icon-brendLogo-1"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="main__clients__list__item">
-              <a class="main__clients__icon" href="https://www.google.com/" target="_blank">
+            <li class="main__list__item">
+              <a class="main__clients__link" href="https://www.google.com/" target="_blank">
                 <svg class="main__clients_svg">
                   <use
-                    class="main__cliente-icon"
+                    class="main__clients-icon"
                     href="./images/icon/symbol-defs.svg#icon-brendLogo-2"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="main__clients__list__item">
-              <a class="main__clients__icon" href="https://www.google.com/" target="_blank">
+            <li class="main__list__item">
+              <a class="main__clients__link" href="https://www.google.com/" target="_blank">
                 <svg class="main__clients_svg">
                   <use
-                    class="main__cliente-icon"
+                    class="main__clients-icon"
                     href="./images/icon/symbol-defs.svg#icon-brendLogo-3"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="main__clients__list__item">
-              <a class="main__clients__icon" href="https://www.google.com/" target="_blank">
+            <li class="main__list__item">
+              <a class="main__clients__link" href="https://www.google.com/" target="_blank">
                 <svg class="main__clients_svg">
                   <use
-                    class="main__cliente-icon"
+                    class="main__clients-icon"
                     href="./images/icon/symbol-defs.svg#icon-brendLogo-4"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="main__clients__list__item">
-              <a class="main__clients__icon" href="https://www.google.com/" target="_blank">
+            <li class="main__list__item">
+              <a class="main__clients__link" href="https://www.google.com/" target="_blank">
                 <svg class="main__clients_svg">
                   <use
-                    class="main__cliente-icon"
+                    class="main__clients-icon"
                     href="./images/icon/symbol-defs.svg#icon-brendLogo-5"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="main__clients__list__item">
-              <a class="main__clients__icon" href="https://www.google.com/" target="_blank">
+            <li class="main__list__item">
+              <a class="main__clients__link" href="https://www.google.com/" target="_blank">
                 <svg class="main__clients_svg">
                   <use
-                    class="main__cliente-icon"
+                    class="main__clients-icon"
                     href="./images/icon/symbol-defs.svg#icon-brendLogo-6"
                   ></use>
                 </svg>
