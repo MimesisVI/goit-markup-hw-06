@@ -1084,6 +1084,7 @@ body {
 }
 
 .main__modal__text-2 {
+  margin-bottom: 4px;
 
   font-family: var(--primary-font);
   font-size: 14px;
