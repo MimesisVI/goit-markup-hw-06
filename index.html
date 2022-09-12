@@ -18,7 +18,7 @@
     <title>Document</title>
   </head>
   <body>
-<!-- ********************** HEADER ********************** -->
+    <!-- ********************** HEADER ********************** -->
     <header class="header">
       <div class="container">
         <nav class="header__nav">
@@ -57,9 +57,9 @@
         </ul>
       </div>
     </header>
-<!-- ********************** MAIN ********************** -->
+    <!-- ********************** MAIN ********************** -->
     <main class="main">
-<!-- ********************** Hero ********************** -->
+      <!-- ********************** Hero ********************** -->
       <section class="main__hero">
         <h1 class="main__hero__head">
           Ефективні рішення для<br />
@@ -69,7 +69,7 @@
           Замовити послугу
         </button>
       </section>
-<!-- ********************** Наші плюси ********************** -->
+      <!-- ********************** Наші плюси ********************** -->
       <section class="main__ours-plus">
         <div class="container">
           <h2 class="visibility-hidden">Наші плюси</h2>
@@ -121,7 +121,7 @@
           </ul>
         </div>
       </section>
-<!-- ********************** Чим ми займаємося ********************** -->
+      <!-- ********************** Чим ми займаємося ********************** -->
       <section class="main__work">
         <div class="container">
           <h2 class="main__work__head">Чим ми займаємося</h2>
@@ -156,7 +156,7 @@
           </ul>
         </div>
       </section>
-<!-- ********************** Наша команда ********************** -->
+      <!-- ********************** Наша команда ********************** -->
       <section class="main__team">
         <div class="container">
           <h2 class="main__team__head">Наша команда</h2>
@@ -376,7 +376,7 @@
           </ul>
         </div>
       </section>
-<!-- ********************** Постійні клієнти ********************** -->
+      <!-- ********************** Постійні клієнти ********************** -->
       <section class="main__clients">
         <div class="container">
           <h2 class="main__clients__head">Постійні клієнти</h2>
@@ -445,7 +445,7 @@
         </div>
       </section>
     </main>
-<!-- ********************** FOOTER ********************** -->
+    <!-- ********************** FOOTER ********************** -->
     <footer class="footer">
       <div class="container">
         <div class="contacts-container">
@@ -514,18 +514,18 @@
               <label>
                 <input class="footer__input" type="email" name="mail" placeholder="E-mail" />
               </label>
+              <button class="footer__mailing__button button-blue" type="submit" data-modal-open>
+                Підписатися
+                <svg class="footer__mailing__svg">
+                  <use href="./images/icon/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
             </form>
-            <button class="footer__mailing__button button-blue" type="button" data-modal-open>
-              Підписатися
-              <svg class="footer__mailing__svg">
-                <use href="./images/icon/symbol-defs.svg#icon-send"></use>
-              </svg>
-            </button>
           </div>
         </div>
       </div>
     </footer>
-<!-- ********************** Modal ********************** -->
+    <!-- ********************** Modal ********************** -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="main__modal-container" data-modal-close>
@@ -534,68 +534,65 @@
           </svg>
         </button>
         <p class="main__modal__text">Залиште свої дані, ми вам передзвонимо</p>
-        <ul>
-          <li class="main__modal__item">
-            <form class="main__modal__form">
+        <form class="main__modal__form">
+          <ul>
+            <li class="main__modal__item">
               <label class="main__modal__lable">
                 <p>Ім'я</p>
                 <input class="main__modal__input" type="text" name="name" />
+                <svg class="main__modal__icon minimize-icon">
+                  <use href="./images/icon/symbol-defs.svg#icon-human"></use>
+                </svg>
               </label>
-            </form>
-            <svg class="main__modal__icon minimize-icon">
-              <use href="./images/icon/symbol-defs.svg#icon-human"></use>
-            </svg>
-          </li>
-          <li class="main__modal__item">
-            <form class="main__modal__form">
+            </li>
+            <li class="main__modal__item">
               <label class="main__modal__lable">
                 <p>Телефон</p>
                 <input class="main__modal__input" type="tel" name="tel" />
+                <svg class="main__modal__icon">
+                  <use href="./images/icon/symbol-defs.svg#icon-phone"></use>
+                </svg>
               </label>
-            </form>
-            <svg class="main__modal__icon">
-              <use href="./images/icon/symbol-defs.svg#icon-phone"></use>
-            </svg>
-          </li>
-          <li class="main__modal__item">
-            <form class="main__modal__form">
+            </li>
+            <li class="main__modal__item">
               <label class="main__modal__lable">
                 <p>Пошта</p>
                 <input class="main__modal__input" type="email" name="mail" />
+                <svg class="main__modal__icon">
+                  <use href="./images/icon/symbol-defs.svg#icon-mail"></use>
+                </svg>
               </label>
-            </form>
-            <svg class="main__modal__icon">
-              <use href="./images/icon/symbol-defs.svg#icon-mail"></use>
-            </svg>
-          </li>
-          <li>
-            <form class="main__modal__form">
+            </li>
+            <li>
               <label class="main__modal__lable">
                 <p>Коментар</p>
-                <textarea class="main__modal__textarea" name="feedback" rows="5" placeholder="Введіть текст"></textarea>
+                <textarea
+                  class="main__modal__textarea"
+                  name="feedback"
+                  rows="5"
+                  placeholder="Введіть текст"
+                ></textarea>
               </label>
-            </form>
-          </li>
-        </ul>
-        <li>
-          <form>
-            <label class="main__modal__lable-2">
-              <input class="main__modal__checbox" type="checkbox" name="hobby" value="reading"/>
-              <span class="main__modal__custom-checbox"></span>
-              <svg class="main__modal__svg-2">
-                <use href="./images/icon/symbol-defs.svg#icon-check"></use>
-              </svg>
-              <p class="main__modal__text-2">
-                Погоджуюся з розсилкою та приймаю
-                <a href="https://www.google.com.ua/" target="_blank">Умови договору</a>
-              </p>
-            </label>
-          </form>
-        </li>
-        <button class="main__modal__button button-blue" type="submit">Відправити</button>
+            </li>
+            <li>
+              <label class="main__modal__lable-2">
+                <input class="main__modal__checbox" type="checkbox" name="hobby" value="reading" />
+                <span class="main__modal__custom-checbox"> </span>
+                <svg class="main__modal__svg-2">
+                  <use href="./images/icon/symbol-defs.svg#icon-check"></use>
+                </svg>
+                <p class="main__modal__text-2">
+                  Погоджуюся з розсилкою та приймаю
+                  <a href="https://www.google.com.ua/" target="_blank">Умови договору</a>
+                </p>
+              </label>
+            </li>
+          </ul>
+          <button class="main__modal__button button-blue" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
-<!-- ********************** Scripts ********************** -->
+    <!-- ********************** Scripts ********************** -->
     <script src="./JS/modal.js"></script>
   </body>
 </html>

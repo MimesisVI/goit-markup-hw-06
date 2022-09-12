@@ -507,11 +507,12 @@ body {
   border-radius: 4px;
   fill: #afb1b8;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main__clients-icon:hover,
-.main__clients-icon:focus {
+.main__clients__link:hover,
+.main__clients__link:focus {
   fill: var(--main-color);
   border: 1px solid var(--main-color);
 }
@@ -781,7 +782,7 @@ body {
 
 }
 
-.footer__mailing__container {
+.footer__form {
   display: flex;
   align-items: flex-end;
 }
@@ -922,20 +923,16 @@ body {
 
 .main__modal__item {
   position: relative;
-}
 
-.main__modal__form {
   margin-bottom: 10px;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main__modal__form:hover + .main__modal__icon, 
-.main__modal__form:focus + .main__modal__icon {
+.main__modal__lable:hover > .main__modal__icon, 
+.main__modal__lable:focus > .main__modal__icon {
   fill: var(--main-color);
 }
 
-.main__modal__form:focus-within + .main__modal__icon {
+.main__modal__lable:focus-within > .main__modal__icon {
   fill: var(--main-color);
 }
 
@@ -943,11 +940,22 @@ body {
   position: relative;
 
   display: flex;
-  align-items: center;
   justify-content: center;
 
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+.main__modal__checbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main__modal__lable-2 a {
@@ -955,33 +963,11 @@ body {
   text-decoration: underline;
 }
 
-.main__modal__svg-2 {
-  margin-right: 8px;
-
-  width: 15px;
-  height: 15px;
-
-  border: 2px solid var(--main-color);
-  border-radius: 2px;
-  background-color: var(--main-color);
-
-  fill: white;
-  
-  opacity: 0;
-}
-
-.main__modal__checbox:checked ~ .main__modal__svg-2 {
-  opacity: 1;
-} 
-
 .main__modal__custom-checbox {
-  display: inline-block;
-  position: absolute;
-  left: 20px;
+  margin-right: 7px;
 
   width: 15px;
   height: 15px;
-  margin-right: 8px;
 
   border: 2px solid var(--headers-color);
   border-radius: 2px;
@@ -999,7 +985,7 @@ body {
   overflow: hidden;
 }
 
-.main__modal__checbox {
+.main__modal__svg-2 {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1010,6 +996,22 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.main__modal__checbox:checked ~ .main__modal__svg-2 {
+  position: static;
+
+  width: 15px;
+  height: 15px;
+  margin: 0 7px 0 0;
+
+  clip-path: none;
+
+  border: 2px solid var(--main-color);
+  border-radius: 2px;
+  background-color: var(--main-color);
+
+  fill: white;
+} 
 
 .main__modal__form p{
   margin-bottom: 4px;
@@ -1067,16 +1069,18 @@ body {
   height: 120px;
   padding: 12px 16px;
 
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.main__modal__textarea::placeholder {
   font-family: var(--primary-font);
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-
-  resize: none;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
 }
 
 .main__modal__text-2 {
