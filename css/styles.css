@@ -77,8 +77,8 @@ body {
   color: var(--main-color);
 }
 
-.link:hover .header__icon,
-.link:focus .header__icon {
+.link:hover .menu-contacts__icon,
+.link:focus .menu-contacts__icon {
   fill: var(--main-color);
 }
 
@@ -140,26 +140,26 @@ body {
   align-items: center;
 }
 
-.header__nav {
+.nav {
   display: flex;
   align-items: center;
 }
 
-.header__menu {
+.nav__menu {
   display: flex;
 
   gap: 50px;
   margin-left: 50px;
 }
 
-.header__menu-2 {
+.menu-contacts {
   display: flex;
 
   gap: 50px;
   margin-left: auto;
 }
 
-.header__icon {
+.menu-contacts__icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
@@ -169,7 +169,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__logo {
+.nav__logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -178,18 +178,18 @@ body {
   text-decoration: none;
 }
 
-.header__logo_top {
+.logo-top {
   color: #000;
 
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.header__logo_mod {
+.nav__logo--mod {
   color: var(--main-color);
 }
 
-.header__link {
+.nav__link {
   position: relative;
 
   padding-top: 10px;
@@ -204,11 +204,11 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__link:focus {
+.nav__link:focus {
   color: var(--main-color);
 }
 
-.header__contacts {
+.menu-contacts__contacts {
   display: flex;
   align-items: center;
 
@@ -230,7 +230,7 @@ body {
   justify-content: center;
 }
 
-.main__hero {
+.hero {
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -240,7 +240,7 @@ body {
     url(../images/hero-img-mod.jpg);
 }
 
-.main__hero__head {
+.hero__title {
   padding-bottom: 30px;
 
   font-family: var(--color-blu-fon);
@@ -252,7 +252,7 @@ body {
   color: #ffffff;
 }
 
-.main__hero__button {
+.hero__button {
   height: 50px;
   width: 216px;
 
@@ -271,25 +271,25 @@ body {
               background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main__hero__button:hover, .main__hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--button-hover-color);
 }
 
 /*Наші плюси*/
 
-.main__ours-plus {
+.ours-plus {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.main__ours-plus ul {
+.ours-plus ul {
   display: flex;
 
   gap: 30px;
 }
 
-.main__ours-plus__icon {
+.ours-plus__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,12 +302,12 @@ body {
   border-radius: 4px;
 }
 
-.main__ours-plus__svg {
+.ours-plus__svg {
   width: 70px;
   height: 70px;
 }
 
-.main__item__head {
+.ours-plus__title {
   margin-bottom: 10px;
   font-weight: 700;
 
@@ -318,7 +318,7 @@ body {
   color: var(--headers-color);
 }
 
-.main__item__text {
+.ours-plus__text {
   text-align: left;
   font-size: 14px;
   line-height: 1.71;
@@ -327,11 +327,11 @@ body {
 
 /* Чим ми займаємося */
 
-.main__work {
+.work {
   padding-bottom: 94px;
 }
 
-.main__work__head {
+.work__title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -342,13 +342,13 @@ body {
   color: var(--headers-color);
 }
 
-.main__work__list {
+.work__list {
   display: flex;
 
   gap: 30px;
 }
 
-.main__work__thumb {
+.work__thumb {
   position: relative;
 
   font-family: var(--primary-font);
@@ -362,7 +362,7 @@ body {
   color: #ffffff;
 }
 
-.main__work__text {
+.work__text {
   position: absolute;
   bottom: 0;
 
@@ -378,14 +378,14 @@ body {
 
 /* Наша команда */
 
-.main__team {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 
   background-color: #f5f4fa;
 }
 
-.main__team__head {
+.team__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -396,25 +396,25 @@ body {
   color: var(--headers-color);
 }
 
-.main__team__list {
+.team__list {
   display: flex;
   justify-content: center;
 
   gap: 30px;
 }
 
-.main__team__conteiner {
+.team__conteiner {
   padding: 30px 32px;
 }
 
-.main__team__item {
+.team__item {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.main__team__name {
+.team__name {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -425,7 +425,7 @@ body {
   color: var(--headers-color);
 }
 
-.main__team__prof {
+.team__prof {
   margin-bottom: 16px;
 
   font-size: 16px;
@@ -435,17 +435,17 @@ body {
   color: var(--text-color);
 }
 
-.main__team__soclist {
+.soclist {
   display: flex;
 
   gap: 10px;
 }
 
-.main__team__soclist__item {
+.team__soclist {
   margin-left: 0;
 }
 
-.main__team__soclist__icon {
+.soclist__icon {
   width: 44px;
   height: 44px;
 
@@ -459,25 +459,25 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main__team__soclist__icon:hover,
-.main__team__soclist__icon:focus {
+.soclist__icon:hover,
+.soclist__icon:focus {
   background-color: var(--main-color);
   fill: #fff;
 }
 
-.main__soclist__svg {
+.soclist__svg {
   width: 20px;
   height: 20px;
 }
 
 /* Постійні клієнти */
 
-.main__clients {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.main__clients__head {
+.clients__title {
   margin-bottom: 50px;
 
   font-family: var(--primary-font);
@@ -489,19 +489,20 @@ body {
   color: var(--headers-color);
 }
 
-.main__clients__list {
+.clients-list {
   display: flex;
 
   gap: 30px;
 }
 
-.main__clients__link {
+.clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
 
   width: 170px;
   height: 92px;
+  padding: 16px 32px;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -511,13 +512,14 @@ body {
               border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main__clients__link:hover,
-.main__clients__link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   fill: var(--main-color);
   border: 1px solid var(--main-color);
 }
 
-.main__clients_svg {
+.clients-list__svg {
+  width: 106px;
   height: 60px;
 }
 
@@ -666,7 +668,7 @@ body {
   justify-content: left;
 }
 
-.header__logo {
+.nav__logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 1.19;
@@ -674,7 +676,7 @@ body {
   text-decoration: none;
 }
 
-.footer__logo_bot {
+.footer__logo-bot {
   display: block;
 
   margin-bottom: 20px;
@@ -682,11 +684,7 @@ body {
   color: #fff;
 }
 
-.header__logo_mod {
-  color: var(--main-color);
-}
-
-.footer__address {
+.footer-list__contacts {
   font-size: 14px;
   line-height: 1.71;
 
@@ -695,30 +693,30 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__address-1 {
+.footer-list__address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__list__item {
+.footer-list__item {
   font-family: var(--primary-font);
   font-size: 14px;
   line-height: 1.71;
 }
 
-.footer__list li {
+.footer-list li {
   margin-bottom: 9px;
 }
 
-.footer__list li:last-child {
+.footer-list li:last-child {
   margin-bottom: 0;
 }
 
-.footer__soc-container {
+.soc-container {
   margin-left: 50px;
   padding-top: 12px;
 }
 
-.footer__soc-container__head {
+.soc-container__title {
   margin-bottom: 20px;
 
   font-family: var(--primary-font);
@@ -730,14 +728,14 @@ body {
   color: #ffffff;
 }
 
-.footer__soclist {
+.footer-soclist {
   display: flex;
 
   gap: 10px;
   padding: 0;
 }
 
-.footer__icon {
+.footer-soclist__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -751,24 +749,24 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__icon:hover,
-.footer__icon:focus {
+.footer-soclist__item:hover,
+.footer-soclist__item:focus {
   background-color: var(--main-color);
 }
 
-.footer__svg {
+.footer-soclist__svg {
   width: 20px;
   height: 20px;
   
   fill: #ffffff;
 }
 
-.footer__mailing {
+.mailing {
   padding-top: 12px;
   margin-left: 93px;
 }
 
-.footer__mailing__text {
+.mailing__title {
   margin-bottom: 20px;
 
   font-family: var(--primary-font);
@@ -782,12 +780,12 @@ body {
 
 }
 
-.footer__form {
+.mailing__form {
   display: flex;
   align-items: flex-end;
 }
 
-.footer__input {
+.mailing__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -804,7 +802,7 @@ body {
   background-color: var(--background-color);
 }
 
-.footer__mailing__button {
+.mailing__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -827,12 +825,13 @@ body {
               background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__mailing__button:hover, .footer__mailing__button:focus {
+.mailing__button:hover, 
+.mailing__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--button-hover-color);
 }
 
-.footer__mailing__svg {
+.mailing__svg {
   margin-left: 10px;
   width: 24px;
   height: 24px;
@@ -873,7 +872,7 @@ body {
   background-color: #ffffff;
 }
 
-.main__modal-container {
+.modal-container {
   position: absolute;
 
   display: flex;
@@ -894,7 +893,7 @@ body {
   cursor: pointer;
 }
 
-.main__modal-cross {
+.modal-container__cross {
   width: 11px;
   height: 11px;
 
@@ -903,12 +902,12 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main__modal-container:hover > .main__modal-cross, 
-.main__modal-container:focus > .main__modal-cross {
+.modal-container:hover > .modal-container__cross, 
+.modal-container:focus > .modal-container__cross {
   fill: var(--main-color);
 }
 
-.main__modal__text {
+.modal__text {
   margin-bottom: 12px;
 
   font-family: var(--primary-font);
@@ -921,22 +920,22 @@ body {
   color: var(--headers-color);
 }
 
-.main__modal__item {
+.modal-list__item {
   position: relative;
 
   margin-bottom: 10px;
 }
 
-.main__modal__lable:hover > .main__modal__icon, 
-.main__modal__lable:focus > .main__modal__icon {
+.modal-list__lable:hover > .modal-list__icon, 
+.modal-list__lable:focus > .modal-list__icon {
   fill: var(--main-color);
 }
 
-.main__modal__lable:focus-within > .main__modal__icon {
+.modal-list__lable:focus-within > .modal-list__icon {
   fill: var(--main-color);
 }
 
-.main__modal__lable-2 {
+.modal-list__rules {
   position: relative;
 
   display: flex;
@@ -946,7 +945,7 @@ body {
   margin-bottom: 30px;
 }
 
-.main__modal__checbox {
+.modal-list__checbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -958,12 +957,12 @@ body {
   overflow: hidden;
 }
 
-.main__modal__lable-2 a {
+.modal-list__rules a {
   color: var(--main-color);
   text-decoration: underline;
 }
 
-.main__modal__custom-checbox {
+.modal-list__custom-checbox {
   margin-right: 7px;
 
   width: 15px;
@@ -973,7 +972,7 @@ body {
   border-radius: 2px;
 }
 
-.main__modal__checbox:checked + .main__modal__custom-checbox {
+.modal-list__checbox:checked + .modal-list__custom-checbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -985,7 +984,7 @@ body {
   overflow: hidden;
 }
 
-.main__modal__svg-2 {
+.modal-list__svg {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -997,7 +996,7 @@ body {
   overflow: hidden;
 }
 
-.main__modal__checbox:checked ~ .main__modal__svg-2 {
+.modal-list__checbox:checked ~ .modal-list__svg {
   position: static;
 
   width: 15px;
@@ -1013,7 +1012,7 @@ body {
   fill: white;
 } 
 
-.main__modal__form p{
+.modal-form p{
   margin-bottom: 4px;
 
   font-family: var(--primary-font);
@@ -1024,7 +1023,7 @@ body {
   color: var(--text-color);
 }
 
-.main__modal__input {
+.modal-list__input {
   width: 448px;
   height: 40px;
   padding-top: 12px;
@@ -1037,16 +1036,16 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main__modal__input:hover, 
-.main__modal__input:focus,
-.main__modal__input:focus-within {
+.modal-list__input:hover, 
+.modal-list__input:focus,
+.modal-list__input:focus-within {
   border: 1px solid var(--main-color);
   border-radius: 4px;
 
   cursor: pointer;
 }
 
-.main__modal__icon {
+.modal-list__icon {
   position: absolute;
   left: 12px;
   bottom: 12px;
@@ -1059,12 +1058,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.minimize-icon {
-  width: 15px;
-  height: 15px;
-}
-
-.main__modal__textarea {
+.modal-list__textarea {
   width: 448px;
   height: 120px;
   padding: 12px 16px;
@@ -1075,7 +1069,7 @@ body {
   border-radius: 4px;
 }
 
-.main__modal__textarea::placeholder {
+.modal-list__textarea::placeholder {
   font-family: var(--primary-font);
   font-size: 12px;
   line-height: 14px;
@@ -1083,7 +1077,7 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.main__modal__text-2 {
+.modal-list__text {
   margin-bottom: 4px;
 
   font-family: var(--primary-font);
@@ -1094,7 +1088,7 @@ body {
   color: var(--text-color);
 }
 
-.main__modal__button {
+.modal-form__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1118,7 +1112,8 @@ body {
               background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main__modal__button:hover, .main__modal__button:focus {
+.modal-form__button:hover, 
+.modal-form__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--button-hover-color);
 }
